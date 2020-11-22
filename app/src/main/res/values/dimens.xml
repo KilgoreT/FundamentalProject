@@ -11,4 +11,11 @@
     <dimen name="space_9x">36dp</dimen>
     <dimen name="space_10x">40dp</dimen>
     <dimen name="space_14x">56dp</dimen>
+
+    <dimen name="textSize40">40sp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+
+    <item name="transparent_50" format="float" type="dimen">0.5</item>
+    <item name="transparent_75" format="float" type="dimen">0.75</item>
+
 </resources>
