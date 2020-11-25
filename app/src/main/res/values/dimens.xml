@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="match_constraints">0dp</dimen>
     <dimen name="space_1x">4dp</dimen>
     <dimen name="space_2x">8dp</dimen>
     <dimen name="space_3x">12dp</dimen>
@@ -17,5 +18,9 @@
 
     <item name="transparent_50" format="float" type="dimen">0.5</item>
     <item name="transparent_75" format="float" type="dimen">0.75</item>
+
+    <item name="percent_40" format="float" type="dimen">0.40</item>
+
+    <item name="dimension_square" format="string" type="dimen">1:1</item>
 
 </resources>
