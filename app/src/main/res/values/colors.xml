@@ -17,5 +17,6 @@
     <color name="clr_accent">#FF3466</color>
     <color name="clr_white">#FFFFFFFF</color>
     <color name="clr_star_selected">#FF3365</color>
+    <color name="clr_item_border">#636375</color>
 
 </resources>

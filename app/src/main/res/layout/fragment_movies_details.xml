@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/clr_background"
     android:overScrollMode="never"
-    tools:context=".MovieDetailsActivity">
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="match_constraints">0dp</dimen>
+
+    <dimen name="border_width">1dp</dimen>
     <dimen name="space_1x">4dp</dimen>
     <dimen name="space_2x">8dp</dimen>
     <dimen name="space_3x">12dp</dimen>
@@ -11,15 +13,20 @@
     <dimen name="space_8x">32dp</dimen>
     <dimen name="space_9x">36dp</dimen>
     <dimen name="space_10x">40dp</dimen>
+    <dimen name="space_11x">44dp</dimen>
     <dimen name="space_14x">56dp</dimen>
 
     <dimen name="textSize40">40sp</dimen>
     <dimen name="textSize16">16sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize12">12sp</dimen>
+    <dimen name="textSize8">8sp</dimen>
 
     <item name="transparent_50" format="float" type="dimen">0.5</item>
     <item name="transparent_75" format="float" type="dimen">0.75</item>
 
     <item name="percent_40" format="float" type="dimen">0.40</item>
+    <item name="percent_50" format="float" type="dimen">0.5</item>
 
     <item name="dimension_square" format="string" type="dimen">1:1</item>
 
