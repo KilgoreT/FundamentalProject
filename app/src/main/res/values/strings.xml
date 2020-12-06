@@ -13,4 +13,10 @@
     <string name="movie_detail_cast_3">Mark Ruffalo</string>
     <string name="movie_detail_cast_4">Chris Hemsworth</string>
     <string name="content_description_image">Image</string>
+    <string name="movies_list_title">Movies list</string>
+    <string name="movie_list_genre">Action, Adventure, Fantasy</string>
+    <string name="movie_list_movie_title">Avengers: End Game</string>
+    <string name="movie_list_movie_duration">137 min</string>
+    <string name="movie_list_rating">13+</string>
+
 </resources>
