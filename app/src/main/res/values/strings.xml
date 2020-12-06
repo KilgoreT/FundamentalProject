@@ -4,7 +4,7 @@
     <string name="movie_detail_age_rating">13+</string>
     <string name="movie_detail_movie_title">Avengers:\nEnd Game</string>
     <string name="movie_detail_genre">Action, Adventure, Fantasy</string>
-    <string name="movie_detail_review_value">125 Reviews</string>
+    <string name="movie_detail_review_value">%d Reviews</string>
     <string name="movie_detail_storyline_title">Storyline</string>
     <string name="movie_detail_storyline_value">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.</string>
     <string name="movie_detail_cast_title">Cast</string>
@@ -16,7 +16,7 @@
     <string name="movies_list_title">Movies list</string>
     <string name="movie_list_genre">Action, Adventure, Fantasy</string>
     <string name="movie_list_movie_title">Avengers: End Game</string>
-    <string name="movie_list_movie_duration">137 min</string>
-    <string name="movie_list_rating">13+</string>
+    <string name="movie_list_movie_duration">%d min</string>
+    <string name="movie_list_rating">%d+</string>
 
 </resources>

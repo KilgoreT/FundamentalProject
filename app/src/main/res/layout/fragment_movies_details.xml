@@ -203,108 +203,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_storyline_value_movie_detail" />
 
-        <ImageView
-            android:id="@+id/iv_cast_1_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginStart="@dimen/space_4x"
-            android:layout_marginTop="@dimen/space_2x"
-            android:contentDescription="@string/content_description_image"
-            android:scaleType="centerCrop"
-            android:src="@drawable/example_cast_1"
-            app:layout_constraintDimensionRatio="@dimen/dimension_square"
-            app:layout_constraintEnd_toStartOf="@id/iv_cast_2_movie_detail"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_cast_title_movie_detail" />
-
-        <TextView
-            android:id="@+id/tv_cast_1_movie_detail"
-            android:layout_width="@dimen/match_constraints"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_actor_list"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_2x"
-            android:text="@string/movie_detail_cast_1"
-            android:textColor="@color/clr_text_cast"
-            android:textSize="@dimen/textSize16"
-            app:layout_constraintEnd_toEndOf="@id/iv_cast_1_movie_detail"
-            app:layout_constraintStart_toStartOf="@id/iv_cast_1_movie_detail"
-            app:layout_constraintTop_toBottomOf="@id/iv_cast_1_movie_detail" />
-
-        <ImageView
-            android:id="@+id/iv_cast_2_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginStart="@dimen/space_2x"
-            android:contentDescription="@string/content_description_image"
-            android:scaleType="centerCrop"
-            android:src="@drawable/example_cast_2"
-            app:layout_constraintDimensionRatio="@dimen/dimension_square"
-            app:layout_constraintEnd_toStartOf="@id/iv_cast_3_movie_detail"
-            app:layout_constraintStart_toEndOf="@id/iv_cast_1_movie_detail"
-            app:layout_constraintTop_toTopOf="@id/iv_cast_1_movie_detail" />
-
-        <TextView
-            android:id="@+id/tv_cast_2_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_2x"
-            android:text="@string/movie_detail_cast_2"
-            android:textColor="@color/clr_text_cast"
-            android:textSize="@dimen/textSize16"
-            app:layout_constraintEnd_toEndOf="@id/iv_cast_2_movie_detail"
-            app:layout_constraintStart_toStartOf="@id/iv_cast_2_movie_detail"
-            app:layout_constraintTop_toBottomOf="@id/iv_cast_2_movie_detail" />
-
-        <ImageView
-            android:id="@+id/iv_cast_3_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginStart="@dimen/space_2x"
-            android:contentDescription="@string/content_description_image"
-            android:scaleType="centerCrop"
-            android:src="@drawable/example_cast_3"
-            app:layout_constraintDimensionRatio="@dimen/dimension_square"
-            app:layout_constraintEnd_toStartOf="@id/iv_cast_4_movie_detail"
-            app:layout_constraintStart_toEndOf="@id/iv_cast_2_movie_detail"
-            app:layout_constraintTop_toTopOf="@id/iv_cast_1_movie_detail" />
-
-        <TextView
-            android:id="@+id/tv_cast_3_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_2x"
-            android:text="@string/movie_detail_cast_3"
-            android:textColor="@color/clr_text_cast"
-            android:textSize="@dimen/textSize16"
-            app:layout_constraintEnd_toEndOf="@id/iv_cast_3_movie_detail"
-            app:layout_constraintStart_toStartOf="@id/iv_cast_3_movie_detail"
-            app:layout_constraintTop_toBottomOf="@id/iv_cast_3_movie_detail" />
-
-        <ImageView
-            android:id="@+id/iv_cast_4_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginStart="@dimen/space_2x"
-            android:layout_marginEnd="@dimen/space_4x"
-            android:contentDescription="@string/content_description_image"
-            android:scaleType="centerCrop"
-            android:src="@drawable/example_cast_4"
-            app:layout_constraintDimensionRatio="@dimen/dimension_square"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/iv_cast_3_movie_detail"
-            app:layout_constraintTop_toTopOf="@id/iv_cast_1_movie_detail" />
-
-        <TextView
-            android:id="@+id/tv_cast_4_movie_detail"
-            android:layout_width="@dimen/match_constraints"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_2x"
-            android:text="@string/movie_detail_cast_4"
-            android:textColor="@color/clr_text_cast"
-            android:textSize="@dimen/textSize16"
-            app:layout_constraintEnd_toEndOf="@id/iv_cast_4_movie_detail"
-            app:layout_constraintStart_toStartOf="@id/iv_cast_4_movie_detail"
-            app:layout_constraintTop_toBottomOf="@id/iv_cast_4_movie_detail" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cast_title_movie_detail"
+            tools:itemCount="5"
+            tools:listitem="@layout/view_holder_actor" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

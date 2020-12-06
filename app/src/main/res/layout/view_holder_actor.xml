@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_background">
+
+    <ImageView
+        android:id="@+id/iv_cast_actor_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="@dimen/dimension_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/example_cast_1" />
+
+    <TextView
+        android:id="@+id/tv_cast_actor_holder"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_2x"
+        android:textColor="@color/clr_text_cast"
+        android:textSize="@dimen/textSize16"
+        app:layout_constraintEnd_toEndOf="@id/iv_cast_actor_holder"
+        app:layout_constraintStart_toStartOf="@id/iv_cast_actor_holder"
+        app:layout_constraintTop_toBottomOf="@id/iv_cast_actor_holder"
+        tools:text="@string/movie_detail_cast_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

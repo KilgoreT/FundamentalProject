@@ -1,4 +1,4 @@
-package me.apomazkin.fundamentalproject
+package me.apomazkin.fundamentalproject.movieList
 
 import android.content.Context
 import android.os.Bundle
@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.google.android.material.card.MaterialCardView
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import me.apomazkin.fundamentalproject.R
+import me.apomazkin.fundamentalproject.entity.DataTool
 
-class FragmentMoviesList : Fragment() {
+private const val SPAN_COUNT = 2
+
+class FragmentMoviesList : Fragment(), MovieListAdapter.MovieListAdapterListener {
 
     private var listener: FragmentMoviesListListener? = null
 
@@ -19,9 +24,12 @@ class FragmentMoviesList : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<MaterialCardView>(R.id.card_item).setOnClickListener {
-            listener?.onMovieSelect()
-        }
+        val recyclerView = view.findViewById<RecyclerView>(R.id.rv_movie_list)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), SPAN_COUNT)
+        val adapter = MovieListAdapter(this)
+        recyclerView.adapter = adapter
+        adapter.submitList(DataTool.getMovieList())
+        recyclerView.addItemDecoration(MovieDecorator())
     }
 
     override fun onAttach(context: Context) {
@@ -37,6 +45,10 @@ class FragmentMoviesList : Fragment() {
     override fun onDetach() {
         super.onDetach()
         listener = null
+    }
+
+    override fun onItemClick(title: String) {
+        listener?.onMovieSelect()
     }
 
     companion object {

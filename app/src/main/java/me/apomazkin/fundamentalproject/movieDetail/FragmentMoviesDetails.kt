@@ -1,4 +1,4 @@
-package me.apomazkin.fundamentalproject
+package me.apomazkin.fundamentalproject.movieDetail
 
 import android.content.Context
 import android.os.Bundle
@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import me.apomazkin.fundamentalproject.R
+import me.apomazkin.fundamentalproject.entity.DataTool
 
 class FragmentMoviesDetails : Fragment() {
 
@@ -19,6 +23,14 @@ class FragmentMoviesDetails : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val recycler = view.findViewById<RecyclerView>(R.id.rv_actor_list)
+        recycler.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapter = ActorListAdapter()
+        recycler.adapter = adapter
+        adapter.submitList(DataTool.getActorList())
+        recycler.addItemDecoration(ActorDecorator())
+
         view.findViewById<TextView>(R.id.tv_back_movie_detail).setOnClickListener {
             listener?.onBackPress()
         }

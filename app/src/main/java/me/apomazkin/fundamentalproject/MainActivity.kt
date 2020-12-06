@@ -2,6 +2,8 @@ package me.apomazkin.fundamentalproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import me.apomazkin.fundamentalproject.movieDetail.FragmentMoviesDetails
+import me.apomazkin.fundamentalproject.movieList.FragmentMoviesList
 
 class MainActivity : AppCompatActivity(), FragmentMoviesList.FragmentMoviesListListener,
     FragmentMoviesDetails.FragmentMoviesDetailsListener {
